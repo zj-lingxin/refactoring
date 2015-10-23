@@ -1,4 +1,4 @@
-package chapter1.good
+package chapter1.middle
 
 /**
   * 租赁

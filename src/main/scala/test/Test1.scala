@@ -22,7 +22,7 @@ object Test {
   }
 
   def goodMatchCode: String = {
-    import chapter1.good.{Customer, Movie, Rental}
+    import chapter1.middle.{Customer, Movie, Rental}
     val customer = new Customer("Lucius")
     customer.addRental(new Rental(new Movie("西游记", Movie.CHILDREN), 2))
     customer.addRental(new Rental(new Movie("水浒传", Movie.REGULAR), 3))
