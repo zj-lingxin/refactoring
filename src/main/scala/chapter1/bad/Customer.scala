@@ -26,7 +26,7 @@ class Customer(private var _name: String) {
           thisAmount += each.daysRented * 3
         case Movie.CHILDREN =>
           thisAmount += 1.5
-          if (each.daysRented > 3) (each.daysRented - 3) * 1.5
+          if (each.daysRented > 3) thisAmount += (each.daysRented - 3) * 1.5
       }
 
       //add frequent renter points

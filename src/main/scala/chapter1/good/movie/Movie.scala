@@ -1,9 +1,12 @@
-package chapter1.middle
+package chapter1.good.movie
+
+
+import chapter1.good.movie.impl.NewReleaseMovie
 
 /**
-  * 租赁
-  */
-class Rental(var movie: Movie, var daysRented: Int) {
+ * 影片
+ */
+abstract class Movie(var title: String) {
   /**
    * 1、使用IDEA的Ctrl+Alt+M快捷键将amountFor这个方法提取出来了。
    * 如果不喜欢thisAmount这个参数，可以修改它。这里修改成result。
@@ -14,22 +17,11 @@ class Rental(var movie: Movie, var daysRented: Int) {
    * 3、当将这个amountFor这个函数移到Rental中后，这名字就不适用了,amountFor改成getCharge()。
    * 且参数也是不需要了。并且去掉private修饰符。要找出旧函数中中的引用点，修改掉后，进一步测试。
    */
-  def getCharge(): Double = {
-    var result = 0D
-    movie.priceCode match {
-      case Movie.REGULAR =>
-        result += 2
-        if (daysRented > 2) result += (daysRented - 2) * 1.5
-      case Movie.NEW_RELEASE =>
-        result += daysRented * 3
-      case Movie.CHILDREN =>
-        result += 1.5
-        if (daysRented > 3) (daysRented - 3) * 1.5
-    }
-    result
-  }
+  def getCharge(daysRented: Int): Double
 
-  def getFrequentRenterPoints = {
-    if (movie.priceCode == Movie.NEW_RELEASE && daysRented > 1) 2 else 1
+  def getFrequentRenterPoints(daysRented: Int) = {
+    if (isInstanceOf[NewReleaseMovie] && daysRented > 1) 2 else 1
   }
 }
+
+
