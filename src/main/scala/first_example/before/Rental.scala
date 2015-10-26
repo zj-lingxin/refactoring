@@ -1,4 +1,4 @@
-package chapter1.before
+package first_example.before
 
 /**
  * 租赁

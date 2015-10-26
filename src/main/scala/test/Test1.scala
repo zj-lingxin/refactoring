@@ -16,7 +16,7 @@ object Test {
   }
 
   def badMatchCode: String = {
-    import chapter1.before._
+    import first_example.before._
     val customer = new Customer("Lucius")
     customer.addRental(new Rental(new Movie("西游记", Movie.CHILDREN), 2))
     customer.addRental(new Rental(new Movie("水浒传", Movie.REGULAR), 3))
@@ -26,8 +26,8 @@ object Test {
   }
 
   def goodMatchCode: String = {
-    import chapter1.after._
-    import chapter1.after.movie._
+    import first_example.after._
+    import first_example.after.movie._
     val customer = new Customer("Lucius")
     customer.addRental(new Rental(new Movie("西游记", Movie.CHILDREN), 2))
     customer.addRental(new Rental(new Movie("水浒传", Movie.REGULAR), 3))

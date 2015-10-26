@@ -1,4 +1,4 @@
-package chapter1.before
+package first_example.before
 
 class Customer(private var _name: String) {
   private val rentals = scala.collection.mutable.ListBuffer[Rental]()

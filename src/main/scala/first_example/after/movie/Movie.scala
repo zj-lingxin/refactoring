@@ -1,4 +1,4 @@
-package chapter1.after.movie
+package first_example.after.movie
 
 /**
  * 这个程序的其余部分(Custmoer.Rental)并不知道我们使用了状态模式。

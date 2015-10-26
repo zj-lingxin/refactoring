@@ -1,6 +1,6 @@
-package chapter1.after
+package first_example.after
 
-import chapter1.after.movie.Movie
+import first_example.after.movie.Movie
 
 /**
   * 租赁

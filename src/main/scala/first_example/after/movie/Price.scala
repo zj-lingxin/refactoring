@@ -1,4 +1,4 @@
-package chapter1.after.movie
+package first_example.after.movie
 abstract class Price {
   def getPriceCode: Int
 
