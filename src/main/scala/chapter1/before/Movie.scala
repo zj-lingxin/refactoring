@@ -1,4 +1,4 @@
-package chapter1.bad
+package chapter1.before
 
 /**
  * ӰƬ
