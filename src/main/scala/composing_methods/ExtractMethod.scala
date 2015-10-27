@@ -1,4 +1,4 @@
-package reorganize_function
+package composing_methods
 
 /**
  * Extract Method 是最常用的重构方法之一。
@@ -59,6 +59,7 @@ object ExtractMethod {
     }
     result
   }
+
   private def getAccTime(acc: Double,time: Double) = 0.5 * acc * time * time
   private def primaryAcc: Double = _primaryForce / _mass
   private def secondaryAcc(secondaryTime: Int): Double = primaryAcc +  secondaryTime / _mass
