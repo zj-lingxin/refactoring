@@ -1,4 +1,4 @@
-package moving_features_between_objects.extract_class.good
+package moving_features_between_objects.extract_class.after
 
 /**
  * 在这个例子中，我们可以将电话号码相关的行为分离到一个独立类中

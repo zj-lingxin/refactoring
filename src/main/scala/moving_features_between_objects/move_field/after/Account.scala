@@ -1,4 +1,4 @@
-package moving_features_between_objects.move_field.good
+package moving_features_between_objects.move_field.after
 
 class Account {
   var _type: AccountType = _

@@ -1,4 +1,4 @@
-package moving_features_between_objects.move_method.bad
+package moving_features_between_objects.move_method.before
 
 
 class AccountType {

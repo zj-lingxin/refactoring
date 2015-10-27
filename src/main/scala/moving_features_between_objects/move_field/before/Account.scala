@@ -1,4 +1,4 @@
-package moving_features_between_objects.move_field.bad
+package moving_features_between_objects.move_field.before
 
 /**
  * 想把表示利率的_interestRate移到AccountType中

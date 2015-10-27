@@ -1,6 +1,6 @@
-package moving_features_between_objects.move_method.good
+package moving_features_between_objects.move_method.after
 
-import moving_features_between_objects.move_method.good.account_type.AccountType
+import moving_features_between_objects.move_method.after.account_type.AccountType
 
 /**
  *

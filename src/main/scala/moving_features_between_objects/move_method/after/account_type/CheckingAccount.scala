@@ -1,4 +1,4 @@
-package moving_features_between_objects.move_method.good.account_type
+package moving_features_between_objects.move_method.after.account_type
 
 /**
  * 个人支票帐户
