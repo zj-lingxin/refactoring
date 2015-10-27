@@ -1,12 +1,11 @@
 package moving_features_between_objects.extract_class
 
-import moving_features_between_objects.extract_class.before.Person
 import moving_features_between_objects.extract_class.after.Telephone
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Test extends FunSuite with BeforeAndAfter {
-  var personBad: Person = new Person
-  var personGood: after.Person = new after.Person
+  var personBad = new moving_features_between_objects.extract_class.before.Person
+  var personGood = new moving_features_between_objects.extract_class.after.Person
 
   before {
     personBad.officeAreaCode = "0573"
