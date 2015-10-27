@@ -31,7 +31,7 @@ class Customer(private var _name: String) {
 
       //add frequent renter points
       frequentRenterPoints += 1
-      //add bonus for a two day new release rental
+      //add bonus for a two day good release rental
       if (each.movie.priceCode == Movie.NEW_RELEASE && each.daysRented > 1) frequentRenterPoints += 1
 
       //show figures for this rental
