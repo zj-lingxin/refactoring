@@ -8,7 +8,6 @@ import org.scalatest.FunSuite
 class OrderTest extends FunSuite {
 
   test("test") {
-
     val orderList = List[Order](new Order("lucius"), new Order("lucius"), new Order("Jim"))
     println(Order.numberOfOrdersFor(orderList,"lucius"))
     println(Customer.getAllCustomer)
