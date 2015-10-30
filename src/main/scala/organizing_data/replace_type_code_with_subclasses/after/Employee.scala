@@ -11,7 +11,7 @@ object Employee {
   val ENGINEER = 0
   val SALESMAN = 1
   val MANAGER = 2
-  def create(_type: Int):Employee = {
+  def create(_type: Int): Employee = {
     _type match {
       case ENGINEER => new Engineer
       case SALESMAN => new Salesman

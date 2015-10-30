@@ -15,7 +15,12 @@ class Order (private var customerName: String){
 }
 
 object Order {
-  def numberOfOrdersFor(orders:List[Order],customerName: String): Int = {
+  def numberOfOrdersFor(orders: List[Order],customerName: String): Int = {
     orders.count(_.getCustomerName == customerName)
+  }
+
+  def main(args: Array[String]) {
+    val orders: List[Order] = List(new Order("lucius"), new Order("lucius"), new Order(null), new Order("jim"))
+    println(numberOfOrdersFor(orders,"lucius"))
   }
 }
